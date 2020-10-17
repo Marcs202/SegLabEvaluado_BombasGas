@@ -38,8 +38,7 @@ namespace SegLabEvaluado_BombasGas
                     if (mensaje == DialogResult.OK)
                     {
                         txtGalonPedido.Text = "1";
-                        txtPago.Text  = PreRegular.ToString();
-                        
+                        txtPago.Text  = PreRegular.ToString();                        
                     }
                     return 0;
                 }

@@ -47,7 +47,7 @@ namespace SegLabEvaluado_BombasGas
                     txtGalonesPed.Text = "1";
                 }
                 return despacho;
-                //Si los galones de la bomba son mayores a los solicitados en tonces el combustible se despacha 
+                //Si los galones de la bomba son mayores a los solicitados entonces el combustible se despacha 
                 //con normalidad devolviendo el precio total
             }
             else

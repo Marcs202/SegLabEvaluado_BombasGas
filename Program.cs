@@ -16,7 +16,11 @@ namespace SegLabEvaluado_BombasGas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Bienvenida Primera = new Bienvenida();
+            if (Primera.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new Bienvenida2());                
+            }            
         }
     }
 }

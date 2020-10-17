@@ -24,7 +24,7 @@ namespace SegLabEvaluado_BombasGas
         Validaciones validar = new Validaciones();
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();            
             PreRegular = Convert.ToDouble(labelRegular.Text);
             PreEspecial = Convert.ToDouble(labelEspecial.Text);
             PreDiecel = Convert.ToDouble(labelDiesel.Text);
@@ -38,6 +38,22 @@ namespace SegLabEvaluado_BombasGas
         private void cmbBomba2_SelectedIndexChanged(object sender, EventArgs e)
         {
             cambiarAlCambiarCmb(cmbBomba2,txtDolareB2);
+        }
+        private void cmbBomba3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cambiarAlCambiarCmb(cmbBomba3, txtDolareB3);
+        }
+        private void cmbBomba4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cambiarAlCambiarCmb(cmbBomba4, txtDolaresB4);
+        }
+        private void cmbBomba5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cambiarAlCambiarCmb(cmbBomba5, txtDolaresB5);
+        }
+        private void cmbBomba6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cambiarAlCambiarCmb(cmbBomba6, txtDolaresB6);
         }
         private void cambiarAlCambiarCmb(ComboBox cmbBomba,TextBox txtd)
         {
@@ -58,6 +74,10 @@ namespace SegLabEvaluado_BombasGas
         {
             llenar(Bomba1, lblRegularB1,lblEspecialB1,lblDieselB1);
             llenar(Bomba2, lblRegularB2, lblEspecialB2, lblDieselB2);
+            llenar(Bomba3, lblRegularB3, lblEspecialB3, lblDieselB3);
+            llenar(Bomba4, lblRegularB4, lblEspecialB4, lblDieselB4);
+            llenar(Bomba5, lblRegularB5, lblEspecialB5, lblDieselB5);
+            llenar(Bomba6, lblRegularB6, lblEspecialB6, lblDieselB6);
 
         }
         private void llenar(Bombas bmb,Label lblR, Label lblE, Label lblD)
@@ -104,6 +124,22 @@ namespace SegLabEvaluado_BombasGas
             cmbBomba2.SelectedIndex = 0;
             cmbBomba2.SelectedIndex = 1;
             cmbBomba2.SelectedIndex = 0;
+
+            cmbBomba3.SelectedIndex = 0;
+            cmbBomba3.SelectedIndex = 1;
+            cmbBomba3.SelectedIndex = 0;
+
+            cmbBomba4.SelectedIndex = 0;
+            cmbBomba4.SelectedIndex = 1;
+            cmbBomba4.SelectedIndex = 0;
+
+            cmbBomba5.SelectedIndex = 0;
+            cmbBomba5.SelectedIndex = 1;
+            cmbBomba5.SelectedIndex = 0;
+
+            cmbBomba6.SelectedIndex = 0;
+            cmbBomba6.SelectedIndex = 1;
+            cmbBomba6.SelectedIndex = 0;
         }
 
         
@@ -165,9 +201,28 @@ namespace SegLabEvaluado_BombasGas
             }*/
 
         }
-        
-    
-        private void txtDespacharBomba2_Click(object sender, EventArgs e)
+
+        private void btnDespacharBomba3_Click(object sender, EventArgs e)
+        {            
+            venta(Bomba3, cmbBomba3, labelRegular, labelEspecial, labelDiesel, lblRegularB3, lblEspecialB3, lblDieselB2, txtGalonesB2, txtDolareB2);
+        }
+
+        private void btnDespacharBomba4_Click(object sender, EventArgs e)
+        {
+            venta(Bomba3, cmbBomba3, labelRegular, labelEspecial, labelDiesel, lblRegularB4, lblEspecialB4, lblDieselB4, txtGalonesB4, txtDolaresB4);
+        }
+
+        private void btnDespacharBomba5_Click(object sender, EventArgs e)
+        {
+            venta(Bomba3, cmbBomba3, labelRegular, labelEspecial, labelDiesel, lblRegularB5, lblEspecialB5, lblDieselB5, txtGalonesB5, txtDolaresB5);
+        }
+
+        private void btnDespacharBomba6_Click(object sender, EventArgs e)
+        {
+            venta(Bomba3, cmbBomba3, labelRegular, labelEspecial, labelDiesel, lblRegularB6, lblEspecialB6, lblDieselB6, txtGalonesB6, txtDolaresB6);   
+        }
+
+        private void btnDespacharBomba2_Click(object sender, EventArgs e)
         {
             
             venta(Bomba2,cmbBomba2,labelRegular,labelEspecial,labelDiesel,lblRegularB2,lblEspecialB2,lblDieselB2,txtGalonesB2,txtDolareB2);
